@@ -54,6 +54,29 @@
     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
       scale(0.8);
   }
+
+  /* Add responsive design rules */
+
+  /* Example breakpoints */
+  @media (max-width: 768px) {
+    .hero .base {
+      width: 120px; /* Adjust for tablets */
+    }
+    .hero .framework {
+      top: 20px;
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero .base {
+      width: 100px; /* Adjust for phones */
+    }
+    .hero .framework {
+      top: 10px;
+      transform: scale(1);
+    }
+  }
 }
 
 #center {
@@ -167,7 +190,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;

@@ -2,3 +2,18 @@
 
 /* Enable manual class-based dark mode for Tailwind v4 */
 @custom-variant dark (&:is(.dark *));
+
+/* Add responsive utilities */
+
+/* Example breakpoints */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Adjust font size for phones */
+  }
+}
